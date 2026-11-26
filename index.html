@@ -2,6 +2,7 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap"
   rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" href="logo liz lazy.png">
 <style>
   :root {
@@ -258,6 +259,11 @@
 </main>
 <footer class="wrap">Telegram: <a href="https://t.me/Roth_411" target="_blank" rel="noopener">@Roth_411</a></footer>
 <dialog id="big"><img alt=""></dialog>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/sw.js");
+  }
+</script>
 <script>
   let lang = "en";
   const hello = { en: n => "Hello, I want to order the " + n + ".", km: n => "សួស្តី ខ្ញុំចង់កម្ម៉ង់ " + n + "។" };
